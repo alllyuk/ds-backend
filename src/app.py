@@ -32,7 +32,7 @@ def process_image(image_id):
         return {'image_id': image_id, 'error': 'Internal server error'}, 500
 
 
-@app.route('/readPlateNumberById', methods=['GET','POST'])
+@app.route('/readPlateNumberById', methods=['POST'])
 def handle_images():
     try:
         data = request.get_json()
